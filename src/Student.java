@@ -15,6 +15,8 @@ public class Student extends Person {
     }
 
     public void addCourse(Course c) {
-
+        if (this.courseList == nulll)
+            this.courseList = new ArrayList<Course>;
+        this.courseList.add(c);
     }
 }
