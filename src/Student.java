@@ -3,6 +3,7 @@
  */
 public class Student extends Person {
     String major;
+    List<Course> courseList;
 
     public Student(String name, String emailAddress, String major) {
         super(name, emailAddress);
@@ -11,5 +12,9 @@ public class Student extends Person {
 
     public String toString() {
         return String.format("Name: %s\nMajor: %s\nEmail: %s", this.name, this.major, this.emailAddress);
+    }
+
+    public void addCourse(Course c) {
+
     }
 }
